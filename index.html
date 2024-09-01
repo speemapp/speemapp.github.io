@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPEEM - Serverless Peer-to-peer & End-to-end Encrypted Messaging </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #333333;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+        header {
+            text-align: center;
+            padding: 50px 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #fcd116; /* Bright Yellow */
+        }
+        header p {
+            font-size: 1.2em;
+            color: #fcd116;
+        }
+        section {
+            margin: 20px 0;
+            padding: 10px;
+        }
+        section h2 {
+            color: #fcd116;
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        ul li {
+            margin: 10px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            color: #ffffff;
+            font-size: 0.9em;
+        }
+        a {
+            color: #fcd116;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>SPEEM</h1>
+    <p>SPEEM - Serverless Peer-to-peer & End-to-end Encrypted Messaging</p>
+</header>
+
+<div class="container">
+    <section>
+        <h2>About SPEEM</h2>
+        <p>SPEEM is a truely serverless, privacy-focused messaging app. SPEEM uses peer-to-peer networking and solid cryptography and encryption to establish secure communications. Messages and app metadata is securely stored on the device, no relay servers.</p>
+    </section>
+
+    <section>
+        <h2>Features</h2>
+        <li><strong>Serverless:</strong> SPEEM don't rely on relay servers. Data is kept secure on each device and conversations are shared only with trusted peers.</li>
+        <li><strong>Peer-to-peer:</strong> SPEEM uses solid and efficient peer-to-peer networking for user pairing and discovery, and also for data reconciliation between trusted peers.</li>
+        <li><strong>Secure local storage:</strong> All messages and metadata are encrypted before being stored in the device's local storage. No remote storage.</li>
+        <li><strong>Native apps:</strong> The mobile apps for iOS and Android are native for better user experience and the best performance.</li>
+    </section>
+
+    <section>
+        <h2>Sub-projects</h2>
+        <li><strong>The core built with Rust:</strong> This is the <a href="https://github.com/speemapp/core" target="_blank">core shared library</a> built with Rust, for maximum performance and security.<a href="https://github.com/paritytech/polkadot-sdk-solochain-template" target="_blank">Polkadot SDK Solochain Template</a>.</li>
+        <li><strong>The iOS app:</strong> The <a href="https://github.com/speemapp/ios-app" target="_blank">iOS</a> native app.</li>
+        <li><strong>The Android app:</strong> The <a href="https://github.com/speemapp/android-app" target="_blank">Android</a>, native app.</li>
+    </section>
+
+    <section>
+        <h2>Development Roadmap</h2>
+        <h3>Proof of Concept (PoC)</h3>
+        <p>
+            The PoC aims to demonstrate the feasibility of a serverless, privacy-focused messaging app. It should include the core functionalities needed to establish secure communication between users without relying on central servers.
+        </p>
+        <ul>
+            <li>User registration and key generation.</li>
+            <li>User pairing and discovery.</li>
+            <li>Peer-to-peer messaging.</li>
+            <li>End-to-end encrypted messages.</li>
+            <li>Store keys and messages securely on the device.</li>
+        </ul>
+        <h3>Version 1</h3>
+        <ul>
+            <li>Enhanced messaging: message delivery confirmation, support multimedia messages.</li>
+            <li>User status and presence nitification.</li>
+            <li>User discovery enhancements.</li>
+            <li>Ensure data synchronization across multiple devices of the same user.</li>
+            <li>Enhanced privacy: provide options for users to manage their own privacy settings.</li>
+            <li>(Maybe) Implement federated learning for predictive text and spam detection without compromising privacy.</li>
+        </ul>
+
+    </section>
+
+    <section>
+        <h2>About the Developer</h2>
+        <p>SPEEM is a project developed by <a href="https://wassimans.com" target="_blank">Wassim Mansouri</a>, in collaboration with the open-source community. To learn more about the project or contribute, visit our <a href="https://github.com/speem" target="_blank">GitHub repository</a>.</p>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 SPEEM app. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
