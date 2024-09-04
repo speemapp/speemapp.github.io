@@ -72,7 +72,7 @@
 <div class="container">
     <section>
         <h2>About SPEEM</h2>
-        <p>SPEEM is a truely serverless, privacy-focused messaging app. SPEEM uses peer-to-peer networking and solid cryptography and encryption to establish secure communications. Messages and app metadata is securely stored on the device, no relay servers.</p>
+        <p>SPEEM is a truly serverless, privacy-focused messaging app. SPEEM uses peer-to-peer networking and solid cryptography to establish secure communications. Messages and app metadata are securely stored on the device, no relay servers.</p>
     </section>
 
     <section>
@@ -113,6 +113,21 @@
             <li>(Maybe) Implement federated learning for predictive text and spam detection without compromising privacy.</li>
         </ul>
 
+    </section>
+
+    <section>
+        <h2>How SPEEM uses Rust</h2>
+        <p>
+            The core of SPEEM is a shared library developed in Rust cross-compiled for mobile targets (iOS and Android). To achieve this, we use <a href="https://mozilla.github.io/uniffi-rs/latest/" target="_blank">UniFFI</a> as the toolkit for building cross-compiled shared Rust libraries.
+            This approach has many benefits:
+        </p>
+
+        <ul>
+            <li>Build the majority of the application code once, in Rust</li>
+            <li>Better testability</li>
+            <li>Encapsulate the behavior of the app in the Core for reuse</li>
+            <li>Use the native UI tool kits to create user experience that is the best fit for a given platform</li>
+        </ul>
     </section>
 
     <section>
